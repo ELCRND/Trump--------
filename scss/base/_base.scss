@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Toyz";
+  src: url("../public/fonts/Toyz.ttf");
+}
+
+:root {
+  --font-family: "TOYZ", sans-serif;
+
+  --blue: #11119d;
+  --blue-light: #4aa5ec;
+  --red: #ff494f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: #fff;
+  background-color: var(--blue);
+}

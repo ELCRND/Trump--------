@@ -1,0 +1,110 @@
+.goals {
+  padding-top: 106px;
+  padding-bottom: 106px;
+  background-color: var(--blue);
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  &:before {
+    content: url("../public/img/goals/goals_ellipse_blue.png");
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+  }
+  &:after {
+    content: url("../public/img/goals/goals_ellipse_red.png");
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+  }
+}
+
+.goals__top {
+  display: flex;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.goals__text {
+  width: 60%;
+  padding-left: 195px;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+  }
+}
+
+.goals__img {
+  width: 40%;
+  padding-right: 60px;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.goals__title {
+  max-width: 390px;
+  margin-bottom: 61px;
+  font-size: 100px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 62px;
+  }
+}
+
+.goals__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  font-size: 48px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
+
+  li {
+    display: flex;
+  }
+}
+
+.step__num {
+  margin-right: 48px;
+  font-size: 117px;
+  font-size: 64px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 24px;
+    font-size: 48px;
+  }
+}
+
+.goals__bottom {
+  margin-top: 195px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+}

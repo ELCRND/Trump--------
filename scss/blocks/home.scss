@@ -1,0 +1,144 @@
+.home {
+  display: flex;
+  background-color: var(--blue);
+  position: relative;
+
+  @media screen and (max-width: 1279px) {
+    flex-direction: column-reverse;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  &::before {
+    content: url("../public/img/home/home_ellipse_blue.png");
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    content: url("../public/img/home/home_ellipse_red.png");
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    translate: 0 22.5%;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.home__img {
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 170px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
+}
+
+.home__text {
+  width: 50%;
+  padding-top: 107px;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (max-width: 1279px) {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home__title {
+  max-width: 659px;
+  margin-bottom: 40px;
+  font-size: 156px;
+  line-height: 100%;
+  text-shadow: 8px 6px 0 #3434ac;
+
+  @media screen and (max-width: 767px) {
+    font-size: 72px;
+    text-align: center;
+  }
+}
+
+.home__description {
+  max-width: 659px;
+  margin-bottom: 40px;
+  font-size: 32px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.home__socials {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 24px;
+}
+
+.socials__link {
+  width: 89px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000;
+  background-color: var(--red);
+  transition: filter 250ms ease;
+
+  @media screen and (max-width: 767px) {
+    width: 50px;
+    height: 50px;
+    &:hover {
+      svg {
+        scale: 0.6 !important;
+      }
+    }
+
+    svg {
+      scale: 0.5;
+    }
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+
+    svg {
+      transition: scale 250ms ease;
+      scale: 1.1;
+    }
+  }
+}
+
+.home__btn {
+  width: 432px;
+  height: 107px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000;
+  background-color: var(--red);
+  font-size: 40px;
+  transition: filter 250ms ease;
+
+  @media screen and (max-width: 767px) {
+    width: 360px;
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
