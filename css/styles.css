@@ -125,7 +125,7 @@ legend {
 
 @font-face {
   font-family: "Toyz";
-  src: url("../public/fonts/Toyz.ttf");
+  src: url("../public/fonts/TOYZ.ttf");
 }
 :root {
   --font-family: "TOYZ", sans-serif;
